@@ -6,12 +6,12 @@ MKG /g/ Mechanical Keyboard Buyer's Guide
 
 @section('content')
 
-<section class="jumbotron">
+<div class="jumbotron" id="main">
 	<div class="container">
 		<h1>/mkg/</h1>
 		<p>Mechanical Keyboard Buyer's Guide.</p>
 	</div>
-</section>
+</div>
 
 <section>
 	<div class="container">
