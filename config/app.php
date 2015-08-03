@@ -140,9 +140,14 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        MKG\Providers\AppServiceProvider::class,
+        MKG\Providers\EventServiceProvider::class,
+        MKG\Providers\RouteServiceProvider::class,
+
+        /*
+         * Extra Providers
+         */
+        Collective\Html\HtmlServiceProvider::class
 
     ],
 
@@ -191,6 +196,12 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /*
+         * Extra Aliases
+         */
+        'Form' => Collective\Html\FormFacade::class,
+        'HTML' => Collective\Html\HtmlFacade::class,
 
     ],
 
