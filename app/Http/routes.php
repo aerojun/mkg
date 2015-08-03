@@ -14,3 +14,19 @@
 Route::get('/', function () {
     return view('site.index');
 });
+
+Route::get('keyboards', function () {
+    return view('site.keyboards');
+});
+
+Route::get('buy', function () {
+    return view('site.buy');
+});
+
+Route::get('switches', function () {
+    return view('site.switches');
+});
+
+Route::get('faqs', function () {
+    return view('site.faqs');
+});

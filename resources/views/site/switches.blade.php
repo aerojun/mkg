@@ -31,7 +31,7 @@ MKG /g/ Mechanical Keyboard Buyer's Guide
 
 							</div>
 							<div class="box-bottom">
-								<a href="{{ URL('keyboards') }}">Learn more</a>
+								<a href="#">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -48,7 +48,7 @@ MKG /g/ Mechanical Keyboard Buyer's Guide
 
 							</div>
 							<div class="box-bottom">
-								<a href="{{ URL('buy') }}">Learn more</a>
+								<a href="#">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -65,7 +65,7 @@ MKG /g/ Mechanical Keyboard Buyer's Guide
 
 							</div>
 							<div class="box-bottom">
-								<a href="{{ URL('switches') }}">Learn more</a>
+								<a href="#">Learn more</a>
 							</div>
 						</div>
 					</div>
@@ -82,7 +82,7 @@ MKG /g/ Mechanical Keyboard Buyer's Guide
 
 							</div>
 							<div class="box-bottom">
-								<a href="{{ URL('faqs') }}">Learn more</a>
+								<a href="#">Learn more</a>
 							</div>
 						</div>
 					</div>

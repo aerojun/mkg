@@ -60,6 +60,18 @@ h1,h2, h3, h4, h5, h6 {
 	position:relative;
 }
 
+.img-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    height: 215px;
+    padding: 4px;
+    line-height: 1.42857;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
 #wrapper{
 	width:100%;
 	margin:0;	
