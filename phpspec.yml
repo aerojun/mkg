@@ -1,5 +1,0 @@
-suites:
-    main:
-        namespace: MKG
-        psr4_prefix: MKG
-        src_path: app
