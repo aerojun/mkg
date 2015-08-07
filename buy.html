@@ -1,96 +1,366 @@
-@extends('master.master')
+<!DOCTYPE html>
 
-@section('title')
-MKG /g/ Mechanical Keyboard Buyer's Guide
-@endsection
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MKG /g/ Mechanical Keyboard Buyer's Guide</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
 
-@section('content')
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
+	<!--Created by Ted Grajeda and downloaded from http://mapglyphs.com -->
+	<link href="assets/css/mapglyphs/2.0/mapglyphs.css" rel="stylesheet">
 
-<div class="jumbotron" id="main">
-	<div class="container">
-		<h1>/mkg/</h1>
-		<p>Mechanical Keyboard Buyer's Guide.</p>
-	</div>
-</div>
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
 
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="row">
-					<div class="col-lg-3">
-						<div class="box">
-							<div class="box-gray aligncenter">
-								<h4>What to buy?</h4>
-								<div class="icon">
-									<i class="fa fa-money fa-3x"></i>
-								</div>
-								<p>
-									Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-								</p>
-
-							</div>
-							<div class="box-bottom">
-								<a href="{{ URL('keyboards') }}">Learn more</a>
-							</div>
-						</div>
+	<div id="wrapper">
+		<header>
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><span>M</span>KG</a>
 					</div>
-					<div class="col-lg-3">
-						<div class="box">
-							<div class="box-gray aligncenter">
-								<h4>Where to buy?</h4>
-								<div class="icon">
-									<i class="fa fa-map fa-3x"></i>
-								</div>
-								<p>
-									Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-								</p>
-
-							</div>
-							<div class="box-bottom">
-								<a href="{{ URL('buy') }}">Learn more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="box">
-							<div class="box-gray aligncenter">
-								<h4>Switch Guide</h4>
-								<div class="icon">
-									<i class="fa fa-keyboard-o fa-3x"></i>
-								</div>
-								<p>
-									Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-								</p>
-
-							</div>
-							<div class="box-bottom">
-								<a href="{{ URL('switches') }}">Learn more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="box">
-							<div class="box-gray aligncenter">
-								<h4>FAQs</h4>
-								<div class="icon">
-									<i class="fa fa-question fa-3x"></i>
-								</div>
-								<p>
-									Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-								</p>
-
-							</div>
-							<div class="box-bottom">
-								<a href="{{ URL('faqs') }}">Learn more</a>
-							</div>
-						</div>
+					<div class="navbar-collapse collapse ">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="keyboards.html">Keyboards</a></li>
+							<li class="active"><a href="buy.html">Buy</a></li>
+							<li><a href="switches.html">Switches</a></li>
+							<li><a href="faqs.html">FAQs</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
+		</header>
+
+		<div class="jumbotron" id="key">
+			<div class="container">
+				<h1>Keyboards, Keycaps and Accessories</h1>
+				<p>Where to buy?</p>
+			</div>
 		</div>
 
-	</div>
-</section>
+		<div class="container">
 
-@endsection
+			<h2><i class="fa fa-keyboard-o"></i> Keyboards</h2>
+			<hr>
+			<div class="keyboards">
+				<div>
+					<h3><i class="fa fa-globe"></i> International</h3>
+					<div class="table-responsive">
+						<table class="table table-striped ">
+							<thead>
+								<tr>
+									<th>Company</th>
+									<th>Site</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">mechanicalkeyboards.com</th>
+									<td><a href="http://mechanicalkeyboards.com/">http://mechanicalkeyboards.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">WASD Keyboards</th>
+									<td><a href="http://www.wasdkeyboards.com/">http://www.wasdkeyboards.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">EliteKeyboards</th>
+									<td><a href="http://elitekeyboards.com/">http://elitekeyboards.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Unicomp, Inc.</th>
+									<td><a href="http://pckeyboard.com/">http://pckeyboard.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Massdrop</th>
+									<td><a href="http://www.massdrop.com/">http://www.massdrop.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">MechKB</th>
+									<td><a href="http://www.mechkb.com/">http://www.mechkb.com/</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div>
+					<h3><i class="mg map-us"></i> United States</h3>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Company</th>
+									<th>Site</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">mechanicalkeyboards.com</th>
+									<td><a href="http://mechanicalkeyboards.com/">http://mechanicalkeyboards.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Amazon</th>
+									<td><a href="http://www.amazon.com/">http://www.amazon.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">EliteKeyboards</th>
+									<td><a href="http://elitekeyboards.com/">http://elitekeyboards.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Newegg</th>
+									<td><a href="http://www.newegg.com/">http://www.newegg.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">NCIXUS Technology</th>
+									<td><a href="http://www.ncixus.com/">http://www.ncixus.com/</a></td>
+								</tr>
+								<tr class="danger">
+									<th scope="row">TankGuys Computer Parts</th>
+									<td><a href="http://www.tankguys.com/">http://www.tankguys.com/ (site not working)</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div>
+					<h3><i class="mg map-ca"></i> Canada</h3>
+					<div class="table-responsive">
+						<table class="table table-striped ">
+							<thead>
+								<tr>
+									<th>Company</th>
+									<th>Site</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Amazon Canada</th>
+									<td><a href="http://www.amazon.ca/">http://www.amazon.ca/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Newegg Canada</th>
+									<td><a href="http://www.newegg.ca/">http://www.newegg.ca/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Netlink Computer Inc.</th>
+									<td><a href="http://www.ncix.ca/">http://www.ncix.ca/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Memory Express, Inc.</th>
+									<td><a href="http://www.memoryexpress.com/">http://www.memoryexpress.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Canada Computers &amp; Electronics</th>
+									<td><a href="http://www.canadacomputers.com/">http://www.canadacomputers.com/</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div>
+					<h3><i class="mg map-uk"></i> United Kingdom</h3>
+					<div class="table-responsive">
+						<table class="table table-striped ">
+							<thead>
+								<tr>
+									<th>Company</th>
+									<th>Site</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Amazon UK</th>
+									<td><a href="http://www.amazon.co.uk/">http://www.amazon.co.uk/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">The Keyboard Company</th>
+									<td><a href="http://www.keyboardco.com/">http://www.keyboardco.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Overclockers UK</th>
+									<td><a href="http://www.overclockers.co.uk/">http://www.overclockers.co.uk/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Pexon PCs</th>
+									<td><a href="http://pexonpcs.co.uk/">http://pexonpcs.co.uk/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Kustom PCs</th>
+									<td><a href="http://www.kustompcs.co.uk/">http://www.kustompcs.co.uk/</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div>
+					<h3><i class="mg map-fr"></i> France</h3>
+					<div class="table-responsive">
+						<table class="table table-striped ">
+							<thead>
+								<tr>
+									<th>Company</th>
+									<th>Site</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Amazon France</th>
+									<td><a href="http://www.amazon.fr/">http://www.amazon.fr/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Pure Gaming</th>
+									<td><a href="http://www.pure-gaming.fr/">http://www.pure-gaming.fr/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">LDLC.com</th>
+									<td><a href="http://www.ldlc.com/">http://www.ldlc.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">MechanicalKeyboards.eu</th>
+									<td><a href="http://www.mechkeyboards.eu/">http://www.mechkeyboards.eu/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Materiel.net</th>
+									<td><a href="http://www.materiel.net/">http://www.materiel.net/</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div>
+					<h3><i class="mg map-de"></i> Germany</h3>
+					<div class="table-responsive">
+						<table class="table table-striped ">
+							<thead>
+								<tr>
+									<th>Company</th>
+									<th>Site</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">Amazon Germany</th>
+									<td><a href="http://www.amazon.de/">http://www.amazon.de/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">Mindfactory AG</th>
+									<td><a href="http://www.mindfactory.de/">http://www.mindfactory.de/</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div>
+					<h3><i class="mg map-au"></i> Australia</h3>
+					<div class="table-responsive">
+						<table class="table table-striped ">
+							<thead>
+								<tr>
+									<th>Company</th>
+									<th>Site</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">MechKB</th>
+									<td><a href="http://www.mechkb.com/">http://www.mechkb.com/</a></td>
+								</tr>
+								<tr>
+									<th scope="row">PC Case Gear</th>
+									<td><a href="http://www.pccasegear.com/">http://www.pccasegear.com/</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<br>
+
+			<h2><i class="fa fa-bold"></i> Keycaps</h2>
+			<hr>
+			<div class="keycaps">
+				<div class="table-responsive">
+					<table class="table table-striped ">
+						<thead>
+							<tr>
+								<th>Company</th>
+								<th>Site</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">GeekHack</th>
+								<td><a href="http://geekhack.org/">http://geekhack.org/</a></td>
+							</tr>
+							<tr>
+								<th scope="row">Pimp My Keyboard</th>
+								<td><a href="http://www.pimpmykeyboard.com/">http://www.pimpmykeyboard.com/</a></td>
+							</tr>
+							<tr>
+								<th scope="row">Massdrop</th>
+								<td><a href="http://www.massdrop.com/">http://www.massdrop.com/</a></td>
+							</tr>
+							<tr>
+								<th scope="row">KeyBoard-WOW</th>
+								<td><a href="http://www.vendio.com/stores/E-sports-Gaming-equipments">http://www.vendio.com/stores/E-sports-Gaming-equipments</a></td>
+							</tr>
+							<tr>
+								<th scope="row">IMSTO</th>
+								<td><a href="http://imsto.cn/">http://imsto.cn/</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<br>
+
+			<h2><i class="fa fa-shield"></i> Accessories</h2>
+			<hr>
+			<div class="accessories">
+				<div class="table-responsive">
+					<table class="table table-striped ">
+						<thead>
+							<tr>
+								<th>Company</th>
+								<th>Site</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">Zeal PC</th>
+								<td><a href="http://zealpc.net/">http://zealpc.net/</a></td>
+							</tr>
+							<tr>
+								<th scope="row">Pexon PCs</th>
+								<td><a href="http://pexonpcs.co.uk/">http://pexonpcs.co.uk/</a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+	<script src="assets/js/jquery.fancybox.pack.js"></script>
+	<script src="assets/js/jquery.fancybox-media.js"></script>
+
+	<script src="assets/js/custom.js"></script>
+</body>
+</html>
