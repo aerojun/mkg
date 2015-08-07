@@ -1,96 +1,370 @@
-@extends('master.master')
+<!DOCTYPE html>
 
-@section('title')
-MKG /g/ Mechanical Keyboard Buyer's Guide
-@endsection
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MKG /g/ Mechanical Keyboard Buyer's Guide</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
 
-@section('content')
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<div class="jumbotron" id="main">
-	<div class="container">
-		<h1>/mkg/</h1>
-		<p>Mechanical Keyboard Buyer's Guide.</p>
-	</div>
-</div>
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+</head>
+<body>
 
-<section>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="row">
-					<div class="col-lg-3">
-						<div class="box">
-							<div class="box-gray aligncenter">
-								<h4>What to buy?</h4>
-								<div class="icon">
-									<i class="fa fa-money fa-3x"></i>
-								</div>
-								<p>
-									Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-								</p>
-
-							</div>
-							<div class="box-bottom">
-								<a href="{{ URL('keyboards') }}">Learn more</a>
-							</div>
-						</div>
+	<div id="wrapper">
+		<header>
+			<div class="navbar navbar-default navbar-static-top">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><span>M</span>KG</a>
 					</div>
-					<div class="col-lg-3">
-						<div class="box">
-							<div class="box-gray aligncenter">
-								<h4>Where to buy?</h4>
-								<div class="icon">
-									<i class="fa fa-map fa-3x"></i>
-								</div>
-								<p>
-									Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-								</p>
-
-							</div>
-							<div class="box-bottom">
-								<a href="{{ URL('buy') }}">Learn more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="box">
-							<div class="box-gray aligncenter">
-								<h4>Switch Guide</h4>
-								<div class="icon">
-									<i class="fa fa-keyboard-o fa-3x"></i>
-								</div>
-								<p>
-									Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-								</p>
-
-							</div>
-							<div class="box-bottom">
-								<a href="{{ URL('switches') }}">Learn more</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="box">
-							<div class="box-gray aligncenter">
-								<h4>FAQs</h4>
-								<div class="icon">
-									<i class="fa fa-question fa-3x"></i>
-								</div>
-								<p>
-									Voluptatem accusantium doloremque laudantium sprea totam rem aperiam.
-								</p>
-
-							</div>
-							<div class="box-bottom">
-								<a href="{{ URL('faqs') }}">Learn more</a>
-							</div>
-						</div>
+					<div class="navbar-collapse collapse ">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="keyboards.html">Keyboards</a></li>
+							<li><a href="buy.html">Buy</a></li>
+							<li class="active"><a href="switches.html">Switches</a></li>
+							<li><a href="faqs.html">FAQs</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
+		</header>
+
+		<div class="jumbotron" id="key">
+			<div class="container">
+				<h1>Mechanical Keyboard Switches</h1>
+			</div>
 		</div>
 
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Switch</th>
+								<th>Image</th>
+								<th>Features</th>
+								<th>Info</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th class="col-md-2">Cherry MX Black Switches</th>
+								<td class="col-md-2"><img src="http://i.imgur.com/Q7uLDSZ.gif" alt="Cherry MX Black Switches" class="img-responsive"></td>
+								<td class="col-md-4">
+									<table class="table">
+										<tbody>
+											<tr>
+												<th>Type</th>
+												<td>Linear Switch</td>
+											</tr>
+											<tr>
+												<th>Tactile</th>
+												<td>No</td>
+											</tr>
+											<tr>
+												<th>Clicky</th>
+												<td>No</td>
+											</tr>
+											<tr>
+												<th>Actuation Force</th>
+												<td>60g (40g-80g Overall)</td>
+											</tr>
+											<tr>
+												<th>Key Travel</th>
+												<td>2mm to actuation, 4mm to bottom</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="col-md-4">
+									Cherry MX-Black switches are linear (non-tactile) switches, these are considered one of the best switch types for gaming. When gaming, having a tactile bump does absolutely nothing because you're going to be bottoming out anyway. So these give you a very smooth feel. The actuation and release points are at the exact same position as well. So games that require a lot of double tapping become easier than on any other keyswitch. However, most people don't enjoy typing on them that much do in part, to their linear nature.<br><br>If you're a person who tends to hit a wrong key every so often while gaming, these will be beneficial in that the high actuation force will help prevent many of those accidental presses.
+								</td>
+							</tr>
+							<tr>
+								<th class="col-md-2">Cherry MX Brown Switches</th>
+								<td class="col-md-2"><img src="http://i.imgur.com/Unjvlq2.gif" alt="Cherry MX Brown Switches" class="img-responsive"></td>
+								<td class="col-md-4">
+									<table class="table">
+										<tbody>
+											<tr>
+												<th>Type</th>
+												<td>Tactile Switch</td>
+											</tr>
+											<tr>
+												<th>Tactile</th>
+												<td>Yes</td>
+											</tr>
+											<tr>
+												<th>Clicky</th>
+												<td>No</td>
+											</tr>
+											<tr>
+												<th>Actuation Force</th>
+												<td>45g (55g Peak Force)</td>
+											</tr>
+											<tr>
+												<th>Key Travel</th>
+												<td>2mm to actuation, 4mm to bottom</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="col-md-4">
+									Cherry MX Brown switches are considered a middle ground between typing and "gaming" switches. They have a light, tactile feel half way through the key press that lets you know the switch has activated. This gives you an indication of what you can release the switch. The switch is considered a middle ground because the reset point &amp; actuation point are close enough together than you can "float" at that point, enabling you to double tap faster.<br><br><strong>As a note:</strong> this switch actually has a peak force of 55G, it is 45G at the point of actuation. This is due to the design of the Cherry switch itself. 
+								</td>
+							</tr>
+							<tr>
+								<th class="col-md-2">Cherry MX Blue Switches</th>
+								<td class="col-md-2"><img src="http://i.imgur.com/IPtexs0.gif" alt="Cherry MX Blue Switches" class="img-responsive"></td>
+								<td class="col-md-4">
+									<table class="table">
+										<tbody>
+											<tr>
+												<th>Type</th>
+												<td>Tactile &amp; Clicky Switch</td>
+											</tr>
+											<tr>
+												<th>Tactile</th>
+												<td>Yes, precise</td>
+											</tr>
+											<tr>
+												<th>Clicky</th>
+												<td>Yes</td>
+											</tr>
+											<tr>
+												<th>Actuation Force</th>
+												<td>50g (60g Peak Force)</td>
+											</tr>
+											<tr>
+												<th>Key Travel</th>
+												<td>2mm to actuation, 4mm to bottom</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="col-md-4">
+									Cherry MX Blue switches are the best cherry switch for typing. The tactile bump can easily be felt, and the resistance is similar to your average keyboard.<br><br>Although many people find them just fine for gaming, some don't like the fact that the release point is above the actuation point. This can cause some trouble with double-tapping. This is usually the case with someone who has experienced other mechanical switches before hand.<br><br><strong>As a note:</strong> this switch actually has a peak force of 60g, it is 50g at the point of actuation. This is due to the design of the Cherry switch itself. 
+								</td>
+							</tr>
+							<tr>
+								<th class="col-md-2">Cherry MX Clear Switches</th>
+								<td class="col-md-2"><img src="http://i.imgur.com/BxbQFPr.gif" alt="Cherry MX Clear Switches" class="img-responsive"></td>
+								<td class="col-md-4">
+									<table class="table">
+										<tbody>
+											<tr>
+												<th>Type</th>
+												<td>Tactile Switch</td>
+											</tr>
+											<tr>
+												<th>Tactile</th>
+												<td>Yes</td>
+											</tr>
+											<tr>
+												<th>Clicky</th>
+												<td>No</td>
+											</tr>
+											<tr>
+												<th>Actuation Force</th>
+												<td>55g (65G peak force)</td>
+											</tr>
+											<tr>
+												<th>Key Travel</th>
+												<td>2mm to actuation, 4mm to bottom</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="col-md-4">
+									Cherry MX Clear switches have often been called "stiffer browns" though some users note that they have more of a tactile feel than browns do. This really can be a subjective topic, though this is another switch that could be considered "ballanced." The force required is comparable to most rubber dome keyboards, with a nice tactile feedback to tell you the key has actuated. These switches are harder to find on keyboards.<br><br><strong>As a note:</strong> this switch actually has a peak force of 65g, it is 55g at the point of actuation. This is due to the design of the Cherry switch itself. 
+								</td>
+							</tr>
+							<tr>
+								<th class="col-md-2">Cherry MX Red Switches</th>
+								<td class="col-md-2"><img src="http://i.imgur.com/Unjvlq2.gif" alt="Cherry MX Red Switches" class="img-responsive"></td>
+								<td class="col-md-4">
+									<table class="table">
+										<tbody>
+											<tr>
+												<th>Type</th>
+												<td>Linear Switch</td>
+											</tr>
+											<tr>
+												<th>Tactile</th>
+												<td>No</td>
+											</tr>
+											<tr>
+												<th>Clicky</th>
+												<td>No</td>
+											</tr>
+											<tr>
+												<th>Actuation Force</th>
+												<td>45g</td>
+											</tr>
+											<tr>
+												<th>Key Travel</th>
+												<td>2mm to actuation, 4mm to bottom</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="col-md-4">
+									Cherry MX-Red's are another switch that can be considered a "gaming" switch. It's essentially a lighter version of the MX Black, requiring less force to actuate. Some people do not find this switch that good for typing or gaming because it is so light, but others rave for this fact. Light or Stiff is always a matter of preference. This switch was hard to find; and was reported as EOL, but it is still in limited production with a higher than average MOQ leading to higher cost to board makers. Marketed with high demand, boards with this switch are becoming more common, but are generally more expensive as well.
+								</td>
+							</tr>
+							<tr>
+								<th class="col-md-2">Buckling Spring Keyswitches</th>
+								<td class="col-md-2"><img src="http://i.imgur.com/gFUNkMo.gif" alt="CBuckling Spring Keyswitches" class="img-responsive"></td>
+								<td class="col-md-4">
+									<table class="table">
+										<tbody>
+											<tr>
+												<th>Type</th>
+												<td>Tactile &amp; Clicky Mechanical Switch</td>
+											</tr>
+											<tr>
+												<th>Tactile</th>
+												<td>Yes, very precise</td>
+											</tr>
+											<tr>
+												<th>Clicky</th>
+												<td>Yes, loud</td>
+											</tr>
+											<tr>
+												<th>Actuation Force</th>
+												<td>65g-70g</td>
+											</tr>
+											<tr>
+												<th>Key Travel</th>
+												<td>2.3mm to actuation, 3.7mm to bottom</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="col-md-4">
+									Buckling springs are pretty straightforward once you see them in action. After pushing the key down a certain distance the spring buckles under pressure, causing the hammer at the bottom to hit a membrane sheet and create an electrical contact. The buckling of the spring also provides tactile feedback and a satisfying click as it hits the shaft wall. And you might also notice through the force diagrams that this is the only mechanical switch where the tactile and audible feedback correspond to the exact moment the switch actuates.
+								</td>
+							</tr>
+							<tr>
+								<th class="col-md-2">Black Alps</th>
+								<td class="col-md-2"><img src="http://i.imgur.com/YSbUUcm.jpg" alt="Black Alps" class="img-responsive"></td>
+								<td class="col-md-4">
+									<table class="table">
+										<tbody>
+											<tr>
+												<th>Type</th>
+												<td>Tactile Mechanical Switch</td>
+											</tr>
+											<tr>
+												<th>Tactile</th>
+												<td>Yes</td>
+											</tr>
+											<tr>
+												<th>Clicky</th>
+												<td>No</td>
+											</tr>
+											<tr>
+												<th>Actuation Force</th>
+												<td>Simplified 60g, Complicated 70g</td>
+											</tr>
+											<tr>
+												<th>Key Travel</th>
+												<td>3.5mm</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="col-md-4">
+									Black Alps are one of the two most common Alps switch types. Many people do not like these switches due to the fact that they are stiff, bottom out hard, and tend to develop friction in the travel as they wear. Nonetheless, they are an improvement over most rubber dome keyboards.<br><br>There are two different types of Black Alps switch - an older type known as the "Complicated" due to the large number of parts in the switch, and a newer type known as the "Simplified", which was manufactured by Alps and some other companies. Complicated switches are common in many older keyboards, particularly the Dell AT101W, which is a very common mechanical keyboard from the 1990s.<br><br>The most well known Simplified Black switch is made by a company called Fukka, and was used in the ABS M1. The Fukka switch has less resistance, but many claim that it provides less solid tactility than the complicated switch.
+								</td>
+							</tr>
+							<tr>
+								<th class="col-md-2">White Alps</th>
+								<td class="col-md-2"><img src="http://i.imgur.com/5UQ8Xq8.jpg" alt="White Alps" class="img-responsive"></td>
+								<td class="col-md-4">
+									<table class="table">
+										<tbody>
+											<tr>
+												<th>Type</th>
+												<td>Clicky &amp; Tactile Mechanical Switch</td>
+											</tr>
+											<tr>
+												<th>Tactile</th>
+												<td>Yes</td>
+											</tr>
+											<tr>
+												<th>Clicky</th>
+												<td>Yes</td>
+											</tr>
+											<tr>
+												<th>Actuation Force</th>
+												<td>60g-70g</td>
+											</tr>
+											<tr>
+												<th>Key Travel</th>
+												<td>3.5mm</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="col-md-4">
+									White Alps are one of the most common Alps switch types. These are far more popular than the Black switches due to more pronounced tactility, and the lower force requirements of some versions. Like the Black Alps, White Alps are much easier to bottom out on compared with other mechanical keyswitch designs.<br><br>As with the Black switch. there are Complicated and Simplified White switches. The two most popular Simplified White switches are the Fukka and the XM. The XM is almost universally considered to be a terrible switch, it was used on some older Filco Zero models, and some vintage keyboards. The Fukka switch is quite popular, and some people prefer them over the Complicated switch. It is used on some current production Alps keyboards such as current production Filco Zeros, Matias keyboards and some others. Complicated White switches were used on some well made keyboards from the 90s such as the Northgate and Focus keyboards.<br><br>There are also a variety of White Alps-like switches of varying quality. Some, like the SMK Monterey, are considered very pleasant to type on.
+								</td>
+							</tr>
+							<tr>
+								<th class="col-md-2">Topre Key Switches</th>
+								<td class="col-md-2"><img src="http://i.imgur.com/IpRXQW0.jpg" alt="Topre Key Switches" class="img-responsive"></td>
+								<td class="col-md-4">
+									<table class="table">
+										<tbody>
+											<tr>
+												<th>Type</th>
+												<td>Tactile Capacitive Switch</td>
+											</tr>
+											<tr>
+												<th>Tactile</th>
+												<td>Yes</td>
+											</tr>
+											<tr>
+												<th>Clicky</th>
+												<td>No</td>
+											</tr>
+											<tr>
+												<th>Actuation Force</th>
+												<td>30g, 35g, 45g, 55g depending on model</td>
+											</tr>
+											<tr>
+												<th>Key Travel</th>
+												<td>4mm</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td class="col-md-4">
+									Topre switches are somewhat of a hybrid switch, and are capacitive by nature. The Topre mechanism uses a spring underneath a rubber dome, and the depression of the spring causes a change in capacitance between the underlying capacitor pads. With this change in capacitance; the switch activates.<br><br>Topre Switches are considered some of the finest switches available, as they offer a very enjoyable typing experience with a quieter experience compared to a Cherry MX, Alps, or Buckling Spring switch. The reason is Topre switches have the smoothest force gradient even compared to Linear switches like MX-Reds and MX-Blacks.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
 	</div>
-</section>
 
-@endsection
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
